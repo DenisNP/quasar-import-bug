@@ -1,9 +1,10 @@
 import { RouteConfig } from 'vue-router'
+import MyLayout from '../layouts/MyLayout.vue'
 
 const routes: RouteConfig[] = [
   {
     path: '/',
-    component: () => import('layouts/MyLayout.vue'),
+    component: MyLayout,
     children: [
       { path: '', component: () => import('pages/Index.vue') },
     ],
